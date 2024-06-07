@@ -115,7 +115,7 @@ int main(int argc, char** argv){
   }
 
   // append data section
-  assembly_code.append("mov eax, 1\nmov ebx, 0\nint 0x80\nsection .data\nputchar_db_01 db 0\ngetchar_db_01 times 2 db 0\nbf_inst_add_db_01 db 0\nmemory times 30000 db 0");
+  assembly_code.append("mov eax, 1\nmov ebx, 0\nint 0x80\nsection .data\nputchar_db_01 db 0\ngetchar_db_01 times 2 db 0\nmemory times 30000 db 0");
 
   std::cout << assembly_code << "\n";
 
